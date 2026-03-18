@@ -1,0 +1,99 @@
+body {
+    background-image: url('images/fundo3.jpg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* SLIDER */
+header.hero {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;        /* Ocupa toda a largura da tela */
+    max-width: 1200px;  /* Largura máxima do banner */
+    margin: 20px auto;  /* Centraliza na página */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;      /* Altura do banner */
+    object-fit: cover;  /* Mantém proporção e corta o excesso */
+    display: none;      /* JS vai mostrar uma de cada vez */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* SEÇÃO PRODUTOS */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 
+{
+    font-size: 36px; /* tamanho do título */
+    text-align: center; /* centralizado */
+    font-weight: bold; /* negrito */
+    text-transform: uppercase; /* letras maiúsculas */
+    background: linear-gradient(90deg, #e33ca6, #f7bbed); /* degradê pink para rosa claro */
+    -webkit-background-clip: text; /* mostra o degradê no texto */
+    -webkit-text-fill-color: transparent; /* torna o texto transparente */
+    letter-spacing: 2px; /* espaçamento entre letras */
+    margin-bottom: 30px; /* espaço abaixo do título */
+}
+.product-card {
+    display: inline-block;
+    margin: 15px;
+    width: 250px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BOTÕES */
+.btn-secondary {
+    display: inline-block;
+    margin-top: 14px;
+    background-color: #e91e63;
+    padding: 12px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #c2185b;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer a {
+    color: #ffde00;
+    text-decoration: none;
+    margin: 0 6px;
+}
