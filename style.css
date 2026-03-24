@@ -37,15 +37,19 @@ header.hero {
 
 .products h2 
 {
-    font-size: 36px; /* tamanho do título */
-    text-align: center; /* centralizado */
-    font-weight: bold; /* negrito */
-    text-transform: uppercase; /* letras maiúsculas */
-    background: linear-gradient(90deg, #e33ca6, #f7bbed); /* degradê pink para rosa claro */
-    -webkit-background-clip: text; /* mostra o degradê no texto */
-    -webkit-text-fill-color: transparent; /* torna o texto transparente */
-    letter-spacing: 2px; /* espaçamento entre letras */
-    margin-bottom: 30px; /* espaço abaixo do título */
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #e33ca6, #f7bbed);
+    
+    background-clip: text; /* padrão */
+    -webkit-background-clip: text; /* compatibilidade */
+    
+    -webkit-text-fill-color: transparent;
+    
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 .product-card {
     display: inline-block;
